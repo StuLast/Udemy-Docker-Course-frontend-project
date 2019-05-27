@@ -6,6 +6,6 @@ before_install:
   - docker build -t stuartlast/frontend -f Dockerfile.dev .
 
 script:
-  - docker run stuartlast/frontend npm run test -- --coverage 
+  - docker run stuartlast/frontend yarn run test -- --coverage 
 
 
