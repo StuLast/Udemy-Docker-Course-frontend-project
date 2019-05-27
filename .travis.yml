@@ -1,0 +1,16 @@
+sudo: required
+services: 
+  - docker
+
+before_install:
+  - docker build -t stuartlast/frontend -f Dockerfile.dev .
+
+script:
+  - docker run stuartlast/frontend yarn run test -- --coverage 
+
+deploy: 
+  provider: heroku
+  api_key: "$HEROKU_API_KEY"
+  app: udemy-docker-react-app
+  on: 
+    branch: master
