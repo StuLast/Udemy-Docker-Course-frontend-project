@@ -16,9 +16,18 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         try again
-         
         </a>
+        <p>Demo App with build-flow of github, travisCI and heroku</p>
+        <p>View repo and details at 
+          <a href="https://github.com/StuLast/Udemy-Docker-Course-frontend-project" target="_blank">
+            https://github.com/StuLast/Udemy-Docker-Course-frontend-project
+          </a>
+        </p>
+        <p>Created by 
+          <a href="https://stulast.github.io/" target="_blank">
+            Stuart Last
+          </a>
+        </p>
       </header>
     </div>
   );
